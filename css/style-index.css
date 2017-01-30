@@ -1,0 +1,1208 @@
+﻿/* Сетка INDEX */
+body {
+    min-width: 960px;
+    margin: 0;
+    padding 0;
+    color: white;
+    background: black url("../img/Безимени-1.jpg") no-repeat center top;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.main-header {
+    min-height: 70px;
+    margin-bottom: 60px;
+}
+.header-menu {
+    width: 720px;
+    min-height: 70px;
+    float: left;
+}
+.user-block {
+    max-width: 140px;
+    */изменяем на максимальную ширину
+чтобы блок ужимался на контент*/
+    min-height: 70px;
+    float: right;
+}
+.logo {
+    width: 368px;
+    height: 204px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.features {
+    margin-bottom: 80px;
+
+}
+.features-item {
+    width: 300px;
+    min-height: 175px;
+    float: left;
+    margin-right: 20px;
+}
+.features-item:last-child {
+    margin-right: 0px;
+}
+.index-content {
+    padding: 50px 80px;
+    margin-bottom: 35px;
+}
+.index-content:last-child {
+    margin-bottom: 0px;
+}
+.left-column {
+    width: 380px;
+    min-height: 330px;
+    float: left;
+}
+.right-column {
+    width: 300px;
+    min-height: 330px;
+    float: right;
+}
+.main-footer {
+    margin-top:  65px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.footer-contacts {
+    width: 320px;
+    float: left;
+    margin-right: 60px;
+}
+.footer-links {
+    width: 180px;
+    float: left;
+}
+.footer-copyright {
+    max-width: 140px;
+    float: right;
+}
+
+/* Полная разметка */
+
+/* header */
+.main-header {
+    background: #000000;
+}
+.header-menu ul {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 0px; /*Переполнение контентом */
+    list-style: none;
+    font-size: 0px;
+}
+.header-menu li {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: top;
+}
+.header-menu a {
+    display: block;
+    padding: 25px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.header-menu a:hover {
+    background: #242424;
+}
+.user-block {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: top;  
+}
+.user-block a {
+    position: relative;
+    display: block;
+    padding: 25px 20px 25px 25px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase; 
+}
+.user-block a:hover,
+.user-block a:active {
+    background: #242424;
+    
+}
+.user-block a::before {
+    content: "";
+    width: 17px;
+    height: 15px;
+    position: absolute;
+    background: url("../img/.icon-login.png") no-repeat;
+    left: 20px;
+    top: 28px;
+    opacity: 0.3;
+    transition: opacity 1.5s;/*можно так тоже (лучше)*/
+}
+
+.user-block a:hover::before,
+.user-block a:active::before {
+    opacity: 1;
+    /*
+    transition: opacity 1.5s; /*и так тоже(хуже)*/
+}
+
+/* footer */
+.main-footer {
+    background: url("../img/Layer%2023@1x.jpg");
+}
+.footer-contacts {
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+} 
+.footer-contacts a {
+    color: white;
+}
+.footer-links {
+    text-align: center;
+    font-size: 0px;
+}
+.footer-links p {
+    margin: 0px;
+    margin-bottom: 15px;
+    padding: 0px;
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.link-btn {
+    margin-top: 0px;
+    width: 43px;
+    height: 43px;
+    display: inline-block;
+    font-size: 0px;
+    text-align: center;
+    margin-left: 7px;
+    transition: 
+        background-color 2s; /*можно так тоже, так лучше(не пропа
+    дает анимация*/
+}
+.btn-vk {
+    margin-left: 0;
+}
+/*  
+.link-btn:hover {
+    transition: 
+        background-color 3s; /*и так тоже (пропадает)
+}
+*/
+.btn-vk {
+    background: black url("../img/vk.png") no-repeat 9px 13px;;
+}
+.btn-fb {
+    background: black url("../img/fb.png") no-repeat 15px 10px;;
+}
+.btn-inst {
+    background: black url("../img/inst.png") no-repeat 12px 11px;;
+}
+.btn-vk:hover {
+    background: white url("../img/vkw.png") no-repeat 9px 13px;;
+}
+.btn-fb:hover {
+    background: white url("../img/fbw.png") no-repeat 15px 10px;;
+}
+.btn-inst:hover {
+    background: white url("../img/instw.png") no-repeat 12px 11px;;
+}
+.footer-copyright {
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    max-width: 180px;
+}
+.footer-copyright p {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footer-copyright .btn {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-right: 0px;
+}
+.footer-copyright .btn:hover {
+    color: black;
+    background: white;
+}
+/*
+.footer-copyright .btn {
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: black;
+    padding: 9.5px 20px;
+}
+*/
+/* INDEX main */
+.features-item {
+    text-align: center;
+}
+.features-title {
+    position: relative;
+    display: block;
+    font-size: 30px;
+    line-height: 42px;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.features-title:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    bottom: 0;
+    left: 50%;
+    margin-left: -10px;
+    transform: rotate(45deg);  
+}
+.features-item p {
+    margin: 10px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.index-content {
+    background: url("../img/%D0%91%D0%B5%D0%B7%D0%B8123%D0%BC%D0%B5%D0%BD%D0%B8-2.png") no-repeat center, url("../img/barbershop-item.jpg"); 
+    padding: 50px 80px;
+    color: black;
+}
+.content-title {
+    margin: 0px;
+    margin-bottom: 30px;
+    padding: 0px;
+    font-size: 30px;
+    line-height: 42px;
+    text-transform: uppercase;
+}
+.news {
+    margin: 0px;
+    padding: 0px;
+    padding-right: 70px;
+    list-style: none;
+}
+.index-content p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+}
+.news p {
+    margin: 0px;
+    padding: 0px;
+
+}
+.news li {
+    margin-bottom: 30px;
+}
+.news li:last-child {
+    margin-bottom: 18px;
+}
+
+time {
+    font-weight: normal;
+    color: #424141;
+}
+.btn {
+    margin-right: 17px;
+    padding: 10px 33px;
+    display: inline-block;
+    background: black;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    vertical-align: top;
+    outline: none;
+}
+.btn:hover,
+.btn:active
+{
+    background: #663d15;
+}
+.btn:disabled {
+    opacity: 0.5;
+}
+.btn:disabled:hover {
+    background: black;
+}
+.galery {
+    position: relative;
+    width: 300px;
+    height: 260px;
+}
+.galery figure {
+    margin: 0;
+    padding: 0;
+    height: 178px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.galery img {
+    border: 7px solid white;
+}
+.galery .btn {
+    position: absolute;
+    bottom: 0px;
+    width: 140px;
+    margin: 0px;
+}
+.galery .galery-prev {
+    left: 0px;
+}
+.galery .galery-next {
+    right: 0px;
+}
+.left-column .space {
+    margin-bottom: 40px;
+}
+
+.form input {
+    float:left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: inherit;
+    line-height: inherit;
+    width: 106px;
+    border: 2px solid black;
+    background: #f9f6f3;
+    text-transform: uppercase;
+    padding: 7px 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: black;
+}
+.form input:nth-child(2n) {
+    margin-right: 0px;
+}
+.form input:nth-child(3,4){
+    margin-bottom: 0;
+} 
+.form input:focus {
+    border: 2px solid #663d15;
+    outline: none;
+}
+.form-btn {
+    margin: 0;
+    clear: both;
+    width: 100%;
+    margin-top: 10px;
+}
+/* indicators */
+
+.header-menu .active {
+    position: relative;
+}
+.header-menu .active::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    height: 4px;
+    right: 20px;
+    left: 20px;
+    background: white;
+}
+.active a:hover, 
+{
+    background: black;
+}
+.header-menu .active:hover::after {
+    display: none;
+}
+/* sign-in for all pages*/
+.sign-in {
+    display: none;
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    margin-left: -230px;
+    width: 300px;
+    padding: 50px 80px;
+    padding-top: 40px;
+    background: url("../img/barbershop-item.jpg");
+    color: black;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.75);
+    z-index: 20;
+}
+.sign-in .end {
+    position: absolute;
+    top: 10px;
+    right: -27px;
+    font-size: 0px;
+    width: 17px;
+    height: 17px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.sign-in .end::before {
+    content: "";
+    position: absolute;
+    top: 6.5px;
+    left: -1px;
+    width: 19px;
+    height: 4px;
+    background: #d1d1d1;
+    transform: rotate(45deg);
+}
+.sign-in .end::after {
+    content: "";
+    position: absolute;
+    top: 6.5px;
+    left: -1px;
+    width: 19px;
+    height: 4px;
+    background: #d1d1d1;
+    transform: rotate(-45deg);
+}
+.sign-in .end:hover::before, 
+.sign-in .end:hover::after {
+    background: red;
+}
+.sign-in h2{
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    line-height: 42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.sign-in p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.sign-in input[type="text"] {
+    padding: 10px 40px 10px 15px;
+    width: 241px;
+    border: 2px solid black;
+    background: #f9f6f3 url("../img/user.png") no-repeat 268px center;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    outline: none;
+}
+.sign-in input[type="password"] {
+    padding: 10px 40px 10px 15px;
+    width: 241px;
+    border: 2px solid black;
+    background: #f9f6f3 url("../img/lock.png") no-repeat 268px center;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    outline: none;
+}
+::-webkit-input-placeholder {
+    color: black;
+}
+.sign-in input[type="text"]:focus,
+.sign-in input[type="password"]:focus {
+    border-color: #663d15;
+}
+.login-form a {
+    float: right;
+    text-transform: uppercase;
+    color: black;
+}
+.login-form .checkbox {
+    position: relative;
+    padding-left: 30px;
+}
+.login-form input[type="checkbox"] {
+    display: none;
+}
+.checkbox input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid black;
+}
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 16px;
+    height: 2px;
+    background: black; 
+}
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+    transform: rotate(45deg)
+}
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+    transform: rotate(-45deg)
+}
+.login-form .checkbox:hover {
+    color: #663d15;
+}
+.login-form .btn {
+    margin-top: 15px;
+    width: 300px;
+    outline: none;
+}
+/* map for INDEX */
+.map {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -287px;
+    margin-left: -390px;
+    width: 766px;
+    height: 560px;
+    border: 7px solid white;
+    background: #ece9e2 url("../img/map.jpg");
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.75);
+    z-index: 20;
+}
+.map .end-map {
+    position: absolute;
+    top: 0px;
+    right: -34px;
+    font-size: 0px;
+    width: 17px;
+    height: 17px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.map .end-map::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -1px;
+    width: 19px;
+    height: 4px;
+    background: #d1d1d1;
+    transform: rotate(45deg);
+}
+.map .end-map::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -1px;
+    width: 19px;
+    height: 4px;
+    background: #d1d1d1;
+    transform: rotate(-45deg);
+}
+.map .end-map:hover::before,
+.map .end-map:hover::after { 
+    background: red;
+}
+/* FOR ALL PAGES */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 10;
+}
+
+/* javascript FOR SOME PAGES */
+@keyframes moution {
+    0% { transform: translateY(-1000px);}
+    30% { transform: translateY(180px);}
+    50% { transform: translateY(-50px);}
+    70% { transform: translateY(10px);}
+    100% { transform: translateY(0px);}
+}
+.sign-in-show {
+    display: block;
+    animation: moution 1.3s;
+}
+.overlay-show {
+    display: block;
+}
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 50%, 90% { transform: translateX(-10px); }
+    30%, 70% { transform: translateX(10px); }
+}
+.sign-in-error {
+    animation: shake 0.45s;
+}
+/* map-show */
+.map-show {
+    display: block;
+    animation: moution 1.3s;
+}
+
+/* Text-Page */
+.text {
+    position: relative;
+    min-width: 960px;
+    margin: 0;
+    padding 0;
+    color: black;
+    background: black url("../img/barbershop-item.jpg")  center top;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.header-menu .header-logo {
+    width: 111px;
+    height: 20px;
+    float: left;
+    padding-top: 23px;
+}
+.header-menu .header-logo:hover {
+    background: none;
+}
+.active span {
+    display: block;
+    padding: 25px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: default;
+}
+.text-header {
+    min-height: 70px;
+    margin-bottom: 0;
+    background: #000000
+}
+.text-main {
+    margin-bottom: 64px; /* Подгон */
+}
+.text-line {
+    text-align: center;
+    position: relative;
+    margin-bottom: 65px;
+}
+.on-line {
+    display: inline-block;
+    position: relative;
+    padding: 0 25px;
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+    background: url("../img/barbershop-item.jpg");
+    z-index: 2;
+}
+.text-line::after {
+    position: relative;
+    top: -23px;
+    content: "";
+    display: block;
+    border-bottom: 3px solid black;
+    z-index: 1;
+}
+.text-left-column {
+    width: 460px;
+    float: left;
+    margin-right: 20px;
+}
+.text-right-column {
+    width: 460px;
+    float: left;
+}
+.text-left-column h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-right: 100px;
+    margin-bottom: 40px;
+}
+.text-main-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.text-main-list li {
+    position: relative;
+    margin: 0px;
+    padding: 0;
+    margin-bottom: 22.5px;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+.text-main-list li::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: black;
+    transform: rotate(45deg);
+    top: 3px;
+    left: 0;
+}
+.text-main-list li:last-child {
+    margin-bottom: 0;
+}
+.text-table-header {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-right: 250px;
+    margin-bottom: 40px;
+}
+.text-table {
+    width: 100%;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.text-table td {
+    width: 50%;
+    border: 2px solid black;
+    padding: 7.5px 0px 7.5px 20px;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.text-table td:last-child {
+    text-align: center;
+    padding: 0px;
+    
+}
+.text-main-section {
+    margin-bottom: 65px;
+}
+.text-about h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.text-about p {
+    float: left;
+    width: 380px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+     margin-bottom: 14px;
+}
+.text-footer {
+    position: relative;
+    margin-top: 0;
+    background: url("../img/Layer%2023@1x.jpg");
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.shadow img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+/* ITEM PAGE */
+.item-galery  {
+    float: left;
+    width: 480px;
+    /* можно было и маргин, если бы второй флоат был бы тоже лефт а не райт*/
+}
+.item-galery figure {
+    margin: 0;
+    padding: 0;
+}
+.item-galery .item-photo-main {
+    margin-bottom: 20px;
+    display: block;
+}
+.item-photo-1, .item-photo-2, .item-photo-3 {
+    float: left;
+    margin-bottom: 20px;
+}
+.item-photo-1, .item-photo-2 {
+    margin-right: 20px;
+}
+.item-photo-main, .item-photo-1, .item-photo-2, .item-photo-3 {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.item-right-column {
+    float:  right;
+    width: 390px;
+}
+.item-data {
+    width: 380px;
+    margin-top: 20px;
+    margin-bottom: 33px;
+}
+.item-data .item-data-1{
+    float: left;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+}
+.item-data .item-data-2{
+    float: right;
+    color: #e4e1de;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+}
+.item-description {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 38px;
+}
+.item-price {
+    margin-bottom: 60px;
+}
+.item-price span {
+    padding: 12px 25px 12px 30px;
+    background: #e5e5e5;
+    display: inline-block;
+}
+.item-price a {
+    padding: 12px 17px 12px 20px;
+    background: black;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+.item-right-column h3 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 30px; /* Проверка на контент, было 0px */
+}
+.item-products-list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 14px;
+    list-style: none;
+}
+.item-products-list li {
+    position: relative;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+.item-products-list li::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: black;
+    transform: rotate(45deg);
+    left: 2px;
+    top: 8.5px;
+}
+.item-main-content {
+    margin-bottom: 30px; /* Проверка на контент, было 50px */
+}
+/* SHOP PAGE */
+.filter {
+    float: left;
+    width: 220px;
+    margin-right: 20px;
+}
+.shop-checkbox {
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+}
+.shop-checkbox legend {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.shop-checkbox ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.shop-checkbox li {
+    margin-bottom: 13px;
+}
+.shop-checkbox li:last-child {
+    margin-bottom: 0;
+}
+/* стилизация чекбоксов в попапе (вверху) */
+.shop-checkbox .checkbox {
+    text-transform: uppercase;
+    padding-left: 45px;
+    position: relative;
+}
+.checkbox:hover {
+    color: #663d15;
+}
+.shop-checkbox input[type="checkbox"] {
+    display: none;
+}
+.shop-radio {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.shop-radio legend {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.shop-radio ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.shop-radio li {
+    margin-bottom: 13px;
+}
+.shop-radio li:last-child {
+    margin-bottom: 0;
+}
+/* Стилизация радиобатона */
+.shop-radio .radio {
+    text-transform: uppercase;
+    padding-left: 45px;
+    position: relative;
+}
+.radio:hover {
+    color: #663d15;
+}
+.shop-radio input[type="radio"] {
+    display: none;
+}
+.radio input[type="radio"] + .radio-indicator {
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.radio input[type="radio"]:checked + .radio-indicator::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 4px solid black; 
+    border-radius: 50%;
+    margin-left: -4px;
+    margin-top: -4px;
+}
+/* Проблемный момент расположения подписи */
+.problem-moment {
+    display: inline-block;
+    width: 110px;
+    vertical-align: top;
+}
+.shop-radio {
+    margin-bottom: 50px;
+}
+/* чисто ради тренировки, можно просто поставить клас .btn*/
+.filter .btn-fil {
+    width: 115px;
+    border: none;
+    background: black;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    line-height: 24px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    outline: none;
+    margin-bottom: 50px; /*Проверка на контент*/
+}
+.filter .btn-fil:hover {
+   background: #663d15;
+}
+.shop-products {
+    float: left;
+    width: 700px;
+    font-size: 0;
+    margin-bottom: 50px;
+}
+.product {
+    font-size: 14px;
+    display: inline-block;
+    width: 220px;
+    height: 286px;
+    background: white;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    vertical-align: top;
+    transition: box-shadow 0.35s;
+}
+.product:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+   
+}
+.product:nth-child(3n) {
+    margin-right: 0;
+}
+.product-description > a {
+    line-height: 10px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: black;
+    margin-bottom: 18px;
+}
+.product-category {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.product-title {
+    text-transform: uppercase;
+    display: inline-block;
+}
+.shop-price {
+    margin-left: 20px;
+    font-size: 0;
+}
+.shop-price span {
+    font-size: 14px;
+    padding: 10px 25px 10px 30px;
+    background: #e5e5e5;
+    display: inline-block;
+}
+.shop-price a {
+    font-size: 14px;
+    padding: 10px 17px 10px 20px;
+    background: black;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.shop-price a:hover {
+    background: #663d15;
+}
+.shop-pages {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 14px;
+    background: green;
+}
+.shop-pages li {
+    float: left;
+    margin-right: 7px;
+    text-decoration: none;
+    margin-top: 25px;
+}
+.shop-pages a, .shop-pages span {
+    line-height: 44px;
+    text-decoration: none;
+    color: white;
+    padding: 13px 18px; /* из-за цифр */
+    background: black;
+}
+/* !!!!*/
+.active-page span {
+    color: black;
+    background: white;
+}
+/* !!!! */
+.shop-pages a:hover {
+    background: #663d15;
+}
+.active-page a:hover {
+    background: white;
+}
+/* Блокировка чекбоксов и радиобатонов (смотри выше)*/
+/*
+input[type="radio"]:disabled + .radio-indicator {
+    border-color: #afadab;
+}
+.radio input[type="radio"]:disabled + .radio-indicator::before {
+    border-color: #afadab;
+}
+*/
+.radio-disabled, .radio-disabled:hover {
+    opacity: 0.3;
+    color: black;
+}
+.checkbox-disabled, .checkbox-disabled:hover {
+    opacity: 0.3;
+    color: black;
+}
+/* Хлебные крошки main-logo для всех страниц (shop-main-logo)*/
+.main-logo h1 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    line-height: 32px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.main-logo ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-logo li {
+    float: left;
+    position: relative;
+    margin-right: 40px;
+    text-transform: uppercase;
+}
+.main-logo a {
+    color: black;
+    text-decoration: none;
+}
+.main-logo li span {
+    color: #e4e1de;
+}
+.main-logo li::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: black;
+    transform: rotate(45deg);
+    top: 8px;
+    right: -25px;
+}
+.main-logo li:last-child::after {
+    display: none;
+}
+.main-logo {
+    padding-top: 55px;
+    margin-bottom: 53px;
+}
+/* Рихтовка отступов main-logo всех страниц */
+.text-logo-add {
+    margin-bottom: 45px;
+}
